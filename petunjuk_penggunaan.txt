@@ -1,0 +1,18 @@
+*) Pastikan sudah menginstall lumen framework karena aplikasi ini dibangun menggunakan lumen framework
+*) silahkan copy dan import file .sql nya dan sesuaikan env database menjadi "train_lumen"
+    untuk user & passw standar pengisian / silakan lihat settingan di .env nya
+
+*) jalankan php -S localhost:8000 -t public / php artisan serve pada terminal
+*) silakan simulasikan menggunakan postman dan akses url http://127.0.0.1:8000/api-v1/user/register dengan inputan
+    inputan email dan password
+*) silakan login untuk mendapatkan otoritas token url http://127.0.0.1:8000/api-v1/user/login
+*) masuk kedalam authorization postman dan pilih Type >> API Key
+    isikan :
+
+            Key =========== token
+            Value ========= "access tokens" (untuk mendapatkan token key-nya silakan login terlebih dahulu)
+            Add to ======== header
+
+*) happy enjoy :)
+
+

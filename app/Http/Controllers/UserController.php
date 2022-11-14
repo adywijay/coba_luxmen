@@ -12,28 +12,6 @@ use Telegram\Bot\Laravel\Facades\Telegram;
 
 class UserController extends Controller
 {
-    public function index(): JsonResponse
-    {
-        //$response = Telegram::sendMessage([
-        //     'chat_id' => env('TELEGRAM_BOT_CHAT_ID'),
-        //     'text' => 'Hello World'
-        // ]);
-
-        // $messageId = $response->getMessageId();
-
-        $updates = Telegram::getUpdates();
-        return response()->json([
-            'data' => $updates
-        ], Response::HTTP_OK);
-    }
-
-    public function delWebHook()
-    {
-        $response = Telegram::removeWebhook();
-        return response()->json($response, 200);
-    }
-
-
     public function register(Request $request): JsonResponse
     {
         $this->validate($request, [
