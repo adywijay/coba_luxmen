@@ -7,7 +7,6 @@ use Illuminate\Http\Response;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
-//use Telegram\Bot\Api;
 use Telegram\Bot\Laravel\Facades\Telegram;
 
 class UserController extends Controller
